@@ -3,17 +3,9 @@ import React, { useState, useCallback } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import api from '../../services/api';
+import { IFood } from '../../types'
 
 import { Container } from './styles';
-
-interface IFood {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-}
 
 interface IFoodProps {
   food: IFood;

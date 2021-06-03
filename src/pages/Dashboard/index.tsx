@@ -6,16 +6,9 @@ import Food from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 
-import { FoodsContainer } from './styles';
+import { IFood } from '../../types'
 
-interface IFood {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-}
+import { FoodsContainer } from './styles';
 
 type IFoodWithoutID = Omit<IFood, 'id'>
 
